@@ -3,8 +3,7 @@ import pickle
 
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.preprocessing import StandardScaler
-from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+from sklearn.metrics import accuracy_score, classification_report
 
 print("=" * 60)
 print("RANDOM FOREST")
@@ -13,46 +12,35 @@ print("=" * 60)
 # Load Dataset
 df = pd.read_csv("dataset/crop_recommendation.csv")
 
-# Features and Target
 X = df.drop("label", axis=1)
 y = df["label"]
 
-# Scale Features
-scaler = StandardScaler()
-X_scaled = scaler.fit_transform(X)
-
-# Train Test Split
+# NO SCALING
 X_train, X_test, y_train, y_test = train_test_split(
-    X_scaled,
+    X,
     y,
     test_size=0.2,
     random_state=42
 )
 
-# Random Forest Model
 model = RandomForestClassifier(
     n_estimators=100,
     random_state=42
 )
 
-# Train
 model.fit(X_train, y_train)
 
-# Predict
 y_pred = model.predict(X_test)
 
-# Accuracy
 accuracy = accuracy_score(y_test, y_pred)
 
-print(f"\nAccuracy : {accuracy:.4f}")
+print(f"Accuracy : {accuracy:.4f}")
 
-print("\nClassification Report\n")
 print(classification_report(y_test, y_pred))
 
-print("\nConfusion Matrix\n")
-print(confusion_matrix(y_test, y_pred))
-
-# Save Model
-pickle.dump(model, open("saved_models/random_forest_model.pkl", "wb"))
+pickle.dump(
+    model,
+    open("saved_models/random_forest_model.pkl", "wb")
+)
 
 print("\n✅ Random Forest Model Saved Successfully!")

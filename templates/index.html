@@ -1,28 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OptiCrop</title>
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>OptiCrop</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/style.css') }}">
+
 </head>
 
 <body>
 
-    <h1>🌱 Welcome to OptiCrop</h1>
+<nav>
 
-    <h2>Smart Agricultural Production Optimization Engine</h2>
+<div class="logo">
 
-    <p>
-        OptiCrop helps farmers choose the best crop based on
-        Nitrogen, Phosphorus, Potassium, Temperature,
-        Humidity, pH, and Rainfall.
-    </p>
+🌾 OptiCrop
 
-    <button>Get Started</button>
+</div>
 
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+<ul>
+
+<li><a href="/">Home</a></li>
+
+<li><a href="/about">About</a></li>
+
+<li><a href="/prediction">Find Your Crop</a></li>
+
+<li><a href="/contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<h1>
+
+Smart Agricultural Production<br>
+
+Optimization Engine
+
+</h1>
+
+<p>
+
+AI-powered crop recommendation system that helps farmers choose the most suitable crop based on soil nutrients and environmental conditions.
+
+</p>
+
+<a href="/prediction">
+
+<button>
+
+Find Your Crop
+
+</button>
+
+</a>
+
+</section>
+
+<section class="features">
+
+<h2>
+
+Why Choose OptiCrop?
+
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+🌱
+
+<h3>AI Prediction</h3>
+
+<p>
+
+Machine learning predicts the best crop.
+
+</p>
+
+</div>
+
+<div class="card">
+
+💧
+
+<h3>Resource Optimization</h3>
+
+<p>
+
+Optimize water and fertilizer usage.
+
+</p>
+
+</div>
+
+<div class="card">
+
+🌾
+
+<h3>Better Yield</h3>
+
+<p>
+
+Increase agricultural productivity.
+
+</p>
+
+</div>
+
+<div class="card">
+
+🌍
+
+<h3>Sustainable Farming</h3>
+
+<p>
+
+Promote eco-friendly farming practices.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
 
 </body>
+
 </html>

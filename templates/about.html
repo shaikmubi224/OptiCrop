@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - OptiCrop</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">🌾 OptiCrop</div>
+
+<ul>
+<li><a href="{{ url_for('home') }}">Home</a></li>
+<li><a href="{{ url_for('about') }}">About</a></li>
+<li><a href="{{ url_for('prediction') }}">Find Your Crop</a></li>
+<li><a href="{{ url_for('contact') }}">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="features">
+
+<h2>About OptiCrop</h2>
+
+<div class="card">
+
+<h3>Project Overview</h3>
+
+<p>
+
+OptiCrop is an AI-powered smart agricultural recommendation system developed using Machine Learning. The system analyzes soil nutrients (Nitrogen, Phosphorous and Potassium), temperature, humidity, pH and rainfall to recommend the most suitable crop.
+
+</p>
+
+<br>
+
+<h3>Machine Learning Models</h3>
+
+<p>
+
+• Logistic Regression<br>
+• Decision Tree<br>
+• Random Forest<br>
+• K-Nearest Neighbors (KNN)<br>
+• K-Means Clustering
+
+</p>
+
+<br>
+
+<h3>Technologies Used</h3>
+
+<p>
+
+Python<br>
+Flask<br>
+Scikit-learn<br>
+Pandas<br>
+NumPy<br>
+HTML<br>
+CSS<br>
+JavaScript
+
+</p>
+
+</div>
+
+</section>
+
+</body>
+</html>
