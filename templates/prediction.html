@@ -89,12 +89,31 @@ href="{{ url_for('static', filename='css/style.css') }}">
 
 <div class="result-card">
 
-<h2>{{ prediction_text }}</h2>
+<h2>🌾 Recommended Crop</h2>
+
+<h1>{{ prediction_text }}</h1>
+
+{% if crop %}
+
+<hr>
+
+<p><strong>🌦 Best Season:</strong> {{ crop.season }}</p>
+
+<p><strong>💧 Water Requirement:</strong> {{ crop.water }}</p>
+
+<p><strong>🌱 Soil Type:</strong> {{ crop.soil }}</p>
+
+<p><strong>🌡 Suitable Temperature:</strong> {{ crop.temperature }}</p>
+
+<br>
+
+<p>{{ crop.description }}</p>
+
+{% endif %}
 
 </div>
 
 {% endif %}
-
 </div>
 
 </section>

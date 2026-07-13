@@ -45,11 +45,37 @@ def predict():
         prediction = model.predict(input_data)
 
         result = prediction[0]
+        crop_info = {
+    "rice": {
+        "season": "Rainy",
+        "water": "High",
+        "soil": "Clayey",
+        "temperature": "20°C - 30°C",
+        "description": "Rice grows best in warm and humid climates with abundant rainfall."
+    },
+
+    "maize": {
+        "season": "Summer",
+        "water": "Moderate",
+        "soil": "Loamy",
+        "temperature": "18°C - 27°C",
+        "description": "Maize is widely grown and requires fertile, well-drained soil."
+    },
+
+    "apple": {
+        "season": "Winter",
+        "water": "Moderate",
+        "soil": "Loamy",
+        "temperature": "15°C - 24°C",
+        "description": "Apple trees grow well in cool climates with well-drained soil."
+    }
+}
 
         return render_template(
-            "prediction.html",
-            prediction_text=f"🌱 Recommended Crop: {result}"
-        )
+    "prediction.html",
+    prediction_text=result,
+    crop=crop_info.get(result.lower(), None)
+)
 
     except Exception as e:
         return render_template(

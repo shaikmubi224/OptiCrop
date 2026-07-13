@@ -262,12 +262,59 @@ nav ul li a:hover{
 
 }
 
-.result-card h2{
+.result-card{
 
-    color:#1b5e20;
+margin-top:35px;
+
+padding:35px;
+
+background:#f1fff1;
+
+border-left:8px solid #2e7d32;
+
+border-radius:12px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.15);
 
 }
 
+.result-card h1{
+
+text-align:center;
+
+font-size:42px;
+
+color:#2e7d32;
+
+margin:20px 0;
+
+}
+
+.result-card h2{
+
+text-align:center;
+
+color:#1b5e20;
+
+margin-bottom:20px;
+
+}
+
+.result-card p{
+
+font-size:18px;
+
+line-height:32px;
+
+color:#444;
+
+}
+
+.result-card hr{
+
+margin:20px 0;
+
+}
 @media(max-width:768px){
 
 .input-grid{
