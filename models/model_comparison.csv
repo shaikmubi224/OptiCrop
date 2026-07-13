@@ -1,0 +1,5 @@
+Model,Accuracy
+Logistic Regression,96.36
+Decision Tree,98.64
+Random Forest,99.32
+KNN,95.68
