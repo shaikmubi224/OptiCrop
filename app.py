@@ -46,6 +46,7 @@ def predict():
 
         result = prediction[0]
         crop_info = {
+
     "rice": {
         "season": "Rainy",
         "water": "High",
@@ -59,7 +60,111 @@ def predict():
         "water": "Moderate",
         "soil": "Loamy",
         "temperature": "18°C - 27°C",
-        "description": "Maize is widely grown and requires fertile, well-drained soil."
+        "description": "Maize requires fertile, well-drained soil and moderate rainfall."
+    },
+
+    "chickpea": {
+        "season": "Winter",
+        "water": "Low",
+        "soil": "Sandy Loam",
+        "temperature": "20°C - 25°C",
+        "description": "Chickpea grows best in cool and dry climatic conditions."
+    },
+
+    "kidneybeans": {
+        "season": "Winter",
+        "water": "Moderate",
+        "soil": "Loamy",
+        "temperature": "15°C - 25°C",
+        "description": "Kidney beans require fertile, well-drained soils with moderate moisture."
+    },
+
+    "pigeonpeas": {
+        "season": "Summer",
+        "water": "Moderate",
+        "soil": "Loamy",
+        "temperature": "25°C - 35°C",
+        "description": "Pigeon peas tolerate drought and improve soil fertility."
+    },
+
+    "mothbeans": {
+        "season": "Summer",
+        "water": "Low",
+        "soil": "Sandy",
+        "temperature": "24°C - 32°C",
+        "description": "Moth beans are highly drought resistant and suitable for dry regions."
+    },
+
+    "mungbean": {
+        "season": "Summer",
+        "water": "Moderate",
+        "soil": "Loamy",
+        "temperature": "25°C - 35°C",
+        "description": "Mung bean grows well in warm climates with moderate rainfall."
+    },
+
+    "blackgram": {
+        "season": "Summer",
+        "water": "Moderate",
+        "soil": "Clay Loam",
+        "temperature": "25°C - 35°C",
+        "description": "Black gram prefers warm weather and fertile soils."
+    },
+
+    "lentil": {
+        "season": "Winter",
+        "water": "Low",
+        "soil": "Loamy",
+        "temperature": "18°C - 25°C",
+        "description": "Lentils thrive in cool climates with well-drained soils."
+    },
+
+    "pomegranate": {
+        "season": "Summer",
+        "water": "Moderate",
+        "soil": "Loamy",
+        "temperature": "20°C - 35°C",
+        "description": "Pomegranate is drought tolerant and suitable for semi-arid regions."
+    },
+
+    "banana": {
+        "season": "All Seasons",
+        "water": "High",
+        "soil": "Loamy",
+        "temperature": "26°C - 30°C",
+        "description": "Banana requires high humidity and rich fertile soil."
+    },
+
+    "mango": {
+        "season": "Summer",
+        "water": "Moderate",
+        "soil": "Loamy",
+        "temperature": "24°C - 30°C",
+        "description": "Mango grows well in tropical climates with good sunlight."
+    },
+
+    "grapes": {
+        "season": "Summer",
+        "water": "Moderate",
+        "soil": "Sandy Loam",
+        "temperature": "20°C - 30°C",
+        "description": "Grapes require dry weather during fruit development."
+    },
+
+    "watermelon": {
+        "season": "Summer",
+        "water": "Moderate",
+        "soil": "Sandy Loam",
+        "temperature": "22°C - 30°C",
+        "description": "Watermelon grows well under warm temperatures and sunlight."
+    },
+
+    "muskmelon": {
+        "season": "Summer",
+        "water": "Moderate",
+        "soil": "Sandy Loam",
+        "temperature": "25°C - 35°C",
+        "description": "Muskmelon prefers warm temperatures and well-drained soil."
     },
 
     "apple": {
@@ -67,8 +172,57 @@ def predict():
         "water": "Moderate",
         "soil": "Loamy",
         "temperature": "15°C - 24°C",
-        "description": "Apple trees grow well in cool climates with well-drained soil."
+        "description": "Apple trees require cool climates and fertile well-drained soils."
+    },
+
+    "orange": {
+        "season": "Winter",
+        "water": "Moderate",
+        "soil": "Loamy",
+        "temperature": "20°C - 30°C",
+        "description": "Orange grows best in subtropical climates."
+    },
+
+    "papaya": {
+        "season": "All Seasons",
+        "water": "Moderate",
+        "soil": "Loamy",
+        "temperature": "22°C - 30°C",
+        "description": "Papaya grows rapidly in warm and humid climates."
+    },
+
+    "coconut": {
+        "season": "All Seasons",
+        "water": "High",
+        "soil": "Sandy",
+        "temperature": "25°C - 32°C",
+        "description": "Coconut requires coastal climates with high humidity."
+    },
+
+    "cotton": {
+        "season": "Summer",
+        "water": "Moderate",
+        "soil": "Black Soil",
+        "temperature": "21°C - 30°C",
+        "description": "Cotton grows well in black soils with warm weather."
+    },
+
+    "jute": {
+        "season": "Rainy",
+        "water": "High",
+        "soil": "Alluvial",
+        "temperature": "24°C - 35°C",
+        "description": "Jute requires warm and humid climates with heavy rainfall."
+    },
+
+    "coffee": {
+        "season": "Winter",
+        "water": "Moderate",
+        "soil": "Loamy",
+        "temperature": "18°C - 24°C",
+        "description": "Coffee grows best in cool tropical regions with shade."
     }
+
 }
 
         return render_template(

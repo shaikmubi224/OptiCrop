@@ -1,59 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | OptiCrop</title>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Contact</title>
-
-<link rel="stylesheet"
-href="{{ url_for('static', filename='css/style.css') }}">
-
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
-
 <body>
 
-<nav>
+<nav class="navbar">
 
-<div class="logo">🌾 OptiCrop</div>
+    <div class="logo">🌾 OptiCrop</div>
 
-<ul>
+    <ul>
 
-<li><a href="{{ url_for('home') }}">Home</a></li>
-<li><a href="{{ url_for('about') }}">About</a></li>
-<li><a href="{{ url_for('prediction') }}">Find Your Crop</a></li>
-<li><a href="{{ url_for('contact') }}">Contact</a></li>
+        <li><a href="/">Home</a></li>
 
-</ul>
+        <li><a href="/about">About</a></li>
+
+        <li><a href="/predict">Find Your Crop</a></li>
+
+        <li><a class="active" href="/contact">Contact</a></li>
+
+    </ul>
 
 </nav>
 
-<section class="features">
+<section class="contact-section">
 
-<h2>Contact</h2>
+    <h1>Get in Touch</h1>
 
-<div class="card">
+    <p>
+        We'd love to hear from you! If you have questions, suggestions,
+        or feedback regarding OptiCrop, feel free to contact us.
+    </p>
 
-<h3>Developer</h3>
+    <div class="contact-container">
 
-<p>Mubeena Shaik</p>
-<p>Padma Jinka</p>
-<p>Sravani Pulivarthi</p>
+        <div class="contact-card">
 
-<br>
+            <h2>📧 Email</h2>
 
-<h3>Project</h3>
+            <p>support@opticrop.com</p>
 
-<p>OptiCrop - Smart Agricultural Production Optimization Engine</p>
+        </div>
 
-<br>
+        <div class="contact-card">
 
-<h3>Technology</h3>
+            <h2>Developers</h2>
 
-<p>Flask + Machine Learning + Python</p>
+            <p>Mubeena Shaik</p>
+            <p>Padma Jinka</p>
+            <p>Sravani Pulivarthi</p>
 
-</div>
+        </div>
+
+        <div class="contact-card">
+
+            <h2>📍 Location</h2>
+
+            <p>Andhra Pradesh, India</p>
+
+        </div>
+
+        <div class="contact-card">
+
+            <h2>💻 GitHub</h2>
+
+            <p>
+                <a href="https://github.com/shaikmubi224/OptiCrop" target="_blank">
+                    View Repository
+                </a>
+            </p>
+
+        </div>
+
+    </div>
 
 </section>
 

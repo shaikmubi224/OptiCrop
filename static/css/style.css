@@ -348,3 +348,170 @@ margin-top:20px;
 }
 
 }
+/* ===========================
+   Statistics Section
+=========================== */
+
+.stats{
+    padding:70px 10%;
+    background:#ffffff;
+    text-align:center;
+}
+
+.stats h2{
+    color:#1b5e20;
+    font-size:40px;
+    margin-bottom:50px;
+}
+
+.stats-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.stat-box{
+
+    width:220px;
+
+    background:#f7fff7;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+
+    transition:.3s;
+
+}
+
+.stat-box:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.stat-box h1{
+
+    color:#2e7d32;
+
+    font-size:45px;
+
+}
+
+.stat-box p{
+
+    margin-top:15px;
+
+    font-size:18px;
+
+    color:#555;
+
+}
+/* ===============================
+   CONTACT PAGE
+=================================*/
+
+.contact-section{
+
+    padding:80px 10%;
+
+    text-align:center;
+
+    background:#f5fff5;
+
+    min-height:100vh;
+
+}
+
+.contact-section h1{
+
+    font-size:48px;
+
+    color:#1b5e20;
+
+    margin-bottom:20px;
+
+}
+
+.contact-section>p{
+
+    width:70%;
+
+    margin:auto;
+
+    font-size:18px;
+
+    color:#555;
+
+    margin-bottom:60px;
+
+}
+
+.contact-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+}
+
+.contact-card{
+
+    width:260px;
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+
+    transition:.3s;
+
+}
+
+.contact-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.contact-card h2{
+
+    color:#2e7d32;
+
+    margin-bottom:15px;
+
+}
+
+.contact-card p{
+
+    color:#444;
+
+    font-size:18px;
+
+}
+
+.contact-card a{
+
+    color:#2e7d32;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
+
+.contact-card a:hover{
+
+    text-decoration:underline;
+
+}
